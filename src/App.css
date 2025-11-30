@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-secondary{
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header ul li{
+  @apply px-2;
+}
+header{
+  @apply px-5 mx-3  bg-black text-white p-5 rounded-2xl;
+}
+header a span{
+  @apply text-red-500 text-[20px];
+}
+header a{
+  @apply text-[20px];
+}
+.mobile-nav{
+  @apply fixed top-[80px] right-[2.5%] bg-black w-[95%] h-1/4 rounded-2xl;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mobile-nav ul li {
+  @apply w-[97.5%] text-center m-1 border-b-2;
+}
+
+section div div a{
+  @apply p-3 ;
+}
+header nav ul li{
+  @apply hover:border-b-2 hover:border-red-600 transition duration-300 w-fit;
+}
+
+@keyframes slideInLeft {
+  0% { transform: translateX(-100px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  0% { transform: translateX(100px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+@keyframes slideInLeft {
+  0% { transform: translateX(-80px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  0% { transform: translateX(80px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.animate-slide-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.animate-slide-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+.hidden-animate {
+  opacity: 0;
+}
+
+
+
+
+
+@keyframes dropDown {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.skill-hidden {
+  opacity: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.skill-show {
+  animation: dropDown 0.6s ease-out forwards;
+}
+.buttonanime{
+  @apply px-6 py-2 bg-red-500 text-white rounded-lg font-semibold 
+         hover:bg-red-600 transition duration-300 hover:scale-110 active:scale-95 mx-3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+html{
+  scroll-behavior: smooth;
 }
