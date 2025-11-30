@@ -7,7 +7,7 @@ export default function Header(){
     const[toggleMenu,setToggleMenu]=useState(false);
     return(
        <header className="flex justify-between" id="home" >
-            <a  className="font-bold " href="#"><span className="text-red-600">M</span>adeshwaran</a>
+            <a  className="font-bold " href="#home"><span className="text-red-600">M</span>adeshwaran</a>
            
             <nav className="hidden md:block">
                 <ul className="flex">
