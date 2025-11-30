@@ -1,4 +1,4 @@
-
+import resume from '../assert/resume.png';
 import { useEffect, useRef, useState } from "react";
 export default function Resume(){
    
@@ -48,8 +48,15 @@ export default function Resume(){
       </h1>
 
       <p className="px-2 text-sm sm:text-base md:text-lg leading-relaxed">
-        You can view my Resume<a    href="/newresume.pdf" download="Madeshwaran_Resume.pdf" className="buttonanime">Downlode</a>
-      </p>
+      You can view my Resume{" "}
+      <a 
+        href="/newresume.pdf" 
+        download="Madeshwaran_Resume.pdf" 
+        className="buttonanime"
+      >
+        Download
+      </a>
+    </p>
 
      
 
