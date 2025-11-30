@@ -6,12 +6,12 @@ export default function Header(){
     };
     const[toggleMenu,setToggleMenu]=useState(false);
     return(
-       <header className="flex justify-between" >
+       <header className="flex justify-between" id="home" >
             <a  className="font-bold " href="#"><span className="text-red-600">M</span>adeshwaran</a>
            
             <nav className="hidden md:block">
                 <ul className="flex">
-                    <li><a href="/">HOME</a></li>
+                    <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#skills">SKILLS</a></li>
                     <li><a href="#project">PROJECTS</a></li>
@@ -22,7 +22,7 @@ export default function Header(){
             {toggleMenu && (
                 <nav className="fixed top-16 left-0 w-full bg-black/90 text-white md:hidden z-50 rounded-b-2xl py-6">
                     <ul className="flex flex-col items-center gap-6 text-lg font-semibold">
-                    <li><a href="/" onClick={handleLinkClick} >HOME</a></li>
+                    <li><a href="#home" onClick={handleLinkClick} >HOME</a></li>
                     <li><a href="#about" onClick={handleLinkClick}>ABOUT</a></li>
                     <li><a href="#skills" onClick={handleLinkClick}>SKILLS</a></li>
                     <li><a href="#project" onClick={handleLinkClick}>PROJECTS</a></li>

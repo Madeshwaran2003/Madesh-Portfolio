@@ -25,10 +25,10 @@ export default function Hero(){
 
     {/* SOCIAL ICONS */}
     <div className="flex justify-center md:justify-start gap-4 mt-4 text-white text-xl md:text-2xl">
-       <a href="#" className="hover:text-red-500"><CiTwitter /></a> 
-       <a href="#" className="hover:text-red-500"><CiYoutube /></a> 
-       <a href="#" className="hover:text-red-500"><FaGithub /></a>
-        <a href="#" className="hover:text-red-500"><FaLinkedin /></a>
+       <a href="https://x.com/" className="hover:text-red-500"><CiTwitter /></a> 
+       <a href="https://www.youtube.com/watch?v=TRFz22o4Bvc" className="hover:text-red-500"><CiYoutube /></a> 
+       <a href="https://github.com/Madeshwaran2003" className="hover:text-red-500"><FaGithub /></a>
+        <a href="www.linkedin.com/in/madeshwaran-n-0aa133291" className="hover:text-red-500"><FaLinkedin /></a>
     </div>
 
   </div>

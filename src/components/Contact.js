@@ -1,4 +1,4 @@
-import resume from '../assert/resume.png';
+
 import { useEffect, useRef, useState } from "react";
 export default function Contact(){
    
