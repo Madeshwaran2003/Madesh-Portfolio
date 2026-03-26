@@ -1,8 +1,20 @@
 export const projects = [
+    {
+    title: "StampTracker",
+    description:
+      "A modern web app for managing stamp orders, customer deadlines, and delivery status.",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript"
+      ],
+    image: "/projects/project4.png",
+    link: "https://stamptracker.netlify.app",
+  },
   {
     title: "Personal potfolio",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra.",
+      "A modern and responsive personal portfolio built with React to showcase my skills and projects.",
     tags: [
       "HTML",
       "CSS",
@@ -12,7 +24,7 @@ export const projects = [
       "Github",
     ],
     image: "/projects/project1.png", // add your own image path
-    link: "#",
+    link: "https://madeshwebportfolio.netlify.app",
   },
   {
     title: "TODO List",
@@ -44,6 +56,7 @@ export const projects = [
     
     ],
     image: "/projects/project3.png",
-    link: "#",
+    link: "https://wheatherapplify.netlify.app/",
   },
+
 ];
