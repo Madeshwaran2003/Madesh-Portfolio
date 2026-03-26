@@ -27,6 +27,17 @@ export const projects = [
     link: "https://madeshwebportfolio.netlify.app",
   },
   {
+    title: "Usha Stamp Website",
+    description:
+      "A responsive web application that allows customers to view and explore different rubber stamp models",
+    tags: [
+      "HTML",
+      "CSS",
+    ],
+    image: "/projects/project2.png",
+    link: "https://usharubberstamp.netlify.app/",
+  },
+  {
     title: "TODO List",
     description:
       "A full-stack to-do list application that allows users to create, update, and manage tasks with a seamless frontend and backend workflow.",
