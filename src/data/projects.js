@@ -34,7 +34,7 @@ export const projects = [
       "HTML",
       "CSS",
     ],
-    image: "/projects/project2.png",
+    image: "/projects/project5.png",
     link: "https://usharubberstamp.netlify.app/",
   },
   {
